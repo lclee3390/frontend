@@ -120,6 +120,8 @@ const CalendarView = ({ chores }) => {
         formatShortWeekday={(locale, date) =>
           ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]
         }
+
+        formatDay={(locale, date) => date.getDate().toString()}
       />
       {!selectedDate && (
         <Grid
